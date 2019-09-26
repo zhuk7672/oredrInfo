@@ -1,0 +1,209 @@
+//选择器
+
+
+//默认样式
+
+#__bs_notify__
+	display none !important
+
+//函数
+
+myback(FileName,size=cover)
+	path=match('\w{36,}\.(?:png|jpg)',""+FileName)
+	background url(../img/path) center top/size no-repeat
+	
+fixed()
+	z-index 3
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background-color rgba(#000,arguments[1])
+	if arguments[0]==1
+		display block
+	else
+		display none
+
+widthC(width)
+	width 'calc(100% - %s)' % width
+	float right unless @float
+
+margin-topC(height)
+	margin-top 'calc((100vh - %s)/2)' % height
+
+margin-topV(height,ohei)
+	margin-top ((height - ohei) /2)
+	
+heightL(height)
+	height height
+	line-height height
+
+display(attribute,imp=0)
+	if attribute=='table'
+		display table
+		width 100% unless @width
+	else
+		if imp==0
+			display attribute
+		else
+			display attribute !important
+			
+		
+backgroundL(a=#f60,b=#f0f,f=top)
+	background -webkit-linear-gradient(f,a,b)
+
+paddingT(value=10)
+	padding value 0
+
+paddingL(value=2%)
+	padding 0 value
+
+float(v)
+	if v==0
+		float left
+		width 100%
+	else
+		float v
+abs(v=1)
+	if v==0
+		display none
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 100%
+	
+widthZ(val)
+	width val
+	height val
+	
+inputW(color=#a9a9a9)
+	&::-webkit-input-placeholder
+		color color
+
+fc()
+	&:first-child
+		&:after
+			display none
+			
+border-topN()
+	&:first-child
+		border-top none
+
+dm()
+	display block
+	margin 0 auto
+	
+
+mt(v)
+	&:first-child
+		margin-top v
+
+ml(v,t=-1)
+	if t>=0
+		&:nth-child({t}n+1)
+			margin-left v
+	else
+		&:first-child
+			margin-left v
+			
+ac(fontColor,Ele=null,back=transparent)
+	if Ele
+		&.acti
+			{Ele}
+				color fontColor
+				background-color back
+	else
+		&.acti
+			color fontColor
+			background-color back
+
+pos(v)
+	position absolute
+	top 50%
+	&.prev
+		left v
+	&.next
+		right v
+
+hover(color,obj=null)
+	
+	
+			
+	if obj
+		{obj}
+			transition .2s
+		&:hover
+			{obj}
+				color color
+	else
+		transition .2s
+		&:hover
+			color color
+			
+
+even(marginLeft)
+	&:nth-child(even)
+		margin-left marginLeft
+	
+center(v)
+	position absolute
+	if v==1
+		left 50%
+		transform translate(-50%,0)
+	if v==2
+		top 50%
+		transform translate(0,-50%)
+	if v==3
+		left 50%
+		top 50%
+		transform translate(-50%,-50%)
+		
+
+
+displayC(v=1)
+	display block
+	text-align center
+	if v!=1
+		margin-top v
+		
+ov(num)
+	if num==1
+		white-space nowrap
+	else
+		line-clamp num
+	overflow hidden
+	text-overflow ellipsis
+	word-wrap normal
+	
+
+r-sjx(a,b,c,d)
+	width 0
+	height 0
+	border-top a solid transparent
+	border-left b solid d
+	border-bottom c solid transparent
+	
+public-a()
+	width 100%
+	height 100%
+	display block
+
+public-img()
+	width 100%
+	min-height 100%
+	
+text-hide()
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	
+db-text(val)
+	overflow hidden
+	-ms-text-overflow ellipsis
+	text-overflow ellipsis
+	-webkit-line-clamp val
+	-webkit-box-orient vertical
+	display -webkit-box
+	word-wrap break-word

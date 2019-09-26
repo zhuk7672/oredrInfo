@@ -1,0 +1,459 @@
+@import './fn.styl'
+
+body
+	background-color #f0f0f2
+	height 100%	
+
+.publicHeader
+	width 100%			
+	padding 8px 3%
+	background-color #fff
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	align-items center
+	span
+		min-height 20px
+		line-height 20px
+		font-size 14px
+		color #ff5722
+		cursor pointer
+		background url("../img/ico1.png") left center no-repeat
+		background-size 20px 20px
+		padding-left 26px
+		&:hover
+			opacity .85
+	
+.order
+	width 100%
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content start
+	padding-top 20px
+	margin-bottom 30px
+
+.sidebar
+	ul
+		li
+			position relative
+			width 100%
+			a
+				position relative
+				font-size 14px
+				color #101010
+				heightL(34px)
+				padding-left 25px
+				display block
+				transition .3s
+				&:hover,&.active
+					background-color #e3e5e8
+					&:before
+						display block
+				&:before
+					content ""
+					position absolute
+					top 0
+					left 0
+					width 8px
+					height 100%
+					background-color #2ca01c
+					display none
+				
+				
+.Leftsidebar
+	width 10%		
+					
+.rightContent
+	width 76%
+	margin-left 2%
+	
+.topMenu
+	width 100%
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content start
+	margin-bottom 30px
+	border-bottom 3px solid #aaaaaa
+	padding 10px 0
+	a
+		position relative
+		font-size 13px
+		color #101010
+		padding 0 15px
+		&.router-link-active
+			font-weight bold
+			&:before
+				content ""
+				position absolute
+				bottom -13px
+				left 0
+				width 100%
+				height 3px
+				background-color #2ca01c
+		
+.viewContent
+	width 100%
+	padding-bottom 25px
+	border 1px solid #bbbbbb	
+	background-color #fff	
+
+.orderInfoTop
+	.blockTop
+		width 100%
+		height 30px
+		background-color #e0e0e0
+		border-bottom 1px solid #bbbbbb
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		li
+			flex 1
+			padding 20px
+			border-bottom 1px solid #bbbbbb
+			border-right 1px solid #bbbbbb
+			line-height 1.4
+			&:last-child
+				border-right none
+			img
+				&.img1
+					width 50px
+					height 50px
+					background-color #333
+					margin 0 3px
+					display inline-block
+					&.platform
+						border-radius 8px
+			strong
+				font-size 16px
+				display block
+				margin-bottom 20px
+			p
+				font-size 14px
+				span
+					font-size 12px
+					
+.path
+	padding 20px 30px
+	.el-step__head.is-process
+		border-color #00cc65
+		color #00cc65
+	.el-step__title.is-process
+		color #00cc65
+		
+.orderDetils
+	width 96%
+	margin 0 auto
+	border 1px solid #bbbbbb
+	h2
+		width 100%
+		heightL(35px)
+		background-color #e0e0e0
+		border-bottom 1px solid #bbbbbb
+		text-align center
+		font-size 15px
+	.address
+		ul
+			width 100%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			border-top 1px solid #bbbbbb
+			border-bottom 1px solid #bbbbbb
+			li
+				width 50%
+				padding 20px
+				border-right 1px solid #bbbbbb
+				line-height 1.4
+				&:last-child
+					border-right none
+				strong
+					min-width 140px
+					font-size 16px
+					color #101010
+					padding-bottom 3px
+					display inline-block
+					margin-bottom 30px
+					padding-right 10px
+					border-bottom 3px solid #bbbbbb
+				p
+					font-size 14px
+					color #101010
+					margin-bottom 10px
+	.deliveryInfo
+		ul
+			width 100%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			li
+				width 33.333%
+				line-height 1.4
+				border-bottom 1px solid #bbbbbb
+				border-right 1px solid #bbbbbb
+				text-align center
+				padding 20px
+				&:last-child
+					border-right none
+				strong
+					font-size 16px
+					display block
+					margin-bottom 10px
+				p
+					font-size 15px
+					
+	.commodity
+		padding 20px 3%
+		h3
+			font-size 18px
+			line-height 1.4
+			margin-bottom 30px
+			span
+				font-weight normal
+				font-size 15px
+		.boxs
+			width 100%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-between
+			padding 20px 0
+			border-bottom 1px solid #bbbbbb
+			.pic
+				width 110px
+				height 110px
+				border 2px solid #e4fa4b
+				overflow hidden
+				img
+					public-img()
+			.text
+				min-width 100px
+				// max-width 360px
+				line-height 1.4
+				margin-left 20px
+				&.t1
+					width 50%
+				strong
+					display block
+					font-size 18px
+					margin-bottom 10px
+				p
+					font-size 16px
+					line-height 1.9
+		.totalBottom
+			text-align right
+			padding-top 40px
+			p
+				line-height 1.6
+				margin-bottom 20px
+				font-size 16px
+				b
+					padding-right 50px
+				span
+					font-weight normal
+					min-width 110px
+					display inline-block
+					text-align left
+					
+.orderHistory
+	width 96%
+	margin 0 auto
+	border 1px solid #bbbbbb
+	h5
+		width 100%
+		heightL(35px)
+		background-color #e0e0e0
+		border-bottom 1px solid #bbbbbb
+		text-align center
+		font-size 15px
+		margin-bottom 30px
+	.box
+		margin-left 20px
+		.tip
+			position relative
+			min-width 240px
+			heightL(36px)
+			padding 0 20px
+			color #fff
+			font-size 16px
+			border-radius 5px
+			background-color #404040
+			box-shadow 0 3px 10px rgba(#000,.2)
+			display inline-block
+			&:before
+				content ""
+				position absolute
+				bottom -10px
+				left 50%
+				margin-left -7px
+				border-right 7px solid transparent
+				border-left 7px solid transparent
+				border-top 10px solid #404040
+			span
+				color #c97f12
+		p
+			padding 16px
+			line-height 1.6
+			font-size 14px
+			color #1890ff
+
+.paidValue
+	border none
+	background none
+	width 80px
+	font-size 16px
+	color #606266
+
+.fourBox
+	margin-bottom 30px
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content start
+		li
+			transition .3s
+			&.li1
+				background-color #3f51b5
+			&.li2
+				background-color #259b24
+			&.li3
+				background-color #6d7ac1
+			&.li4
+				background-color #ff9800
+			&:hover
+				opacity .85
+			a
+				min-width 160px
+				color #fff
+				width 100%
+				height 100%
+				line-height 1.4
+				padding 10px 30px
+				font-size 15px
+				display block
+				b
+					display block
+					font-size 22px
+
+.sechBox
+	text-align right
+	margin-bottom 20px
+	.box
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		margin-bottom 20px
+		.el-input
+			width 15%
+
+.features
+	margin-bottom 20px;
+	.el-select
+		margin-right 20px
+
+.shopList
+	width 100%
+	overflow hidden
+	background-color #fff
+	.has-gutter
+		color #101010
+		tr
+			th
+				background-color #e0e0e0
+	span
+		display block
+		line-height 1.6
+		margin-bottom 3px
+	img
+		&.img1
+			width 50px
+			height 50px
+			background-color #333
+			margin 0 3px
+			display inline-block
+			&.platformName
+				border-radius 8px
+	.ProductInfo
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		margin-bottom 10px
+		.pic
+			width 110px
+			height 110px
+			border 2px solid #e4fa4b
+			overflow hidden
+			img
+				public-img()
+		.text
+			margin-left 20px
+			span
+				font-size 14px
+				i
+					width 24px
+					height 24px
+					line-height 22px
+					background-color #55b7cc
+					color #fff
+					font-size 14px
+					text-align center
+					border 1px solid #babebf
+					border-radius 50%
+					display inline-block
+			
+.shipment
+	margin-bottom 20px
+
+
+.viewBtn
+	text-align center
+	cursor pointer
+	font-size 16px
+	color #259b24
+
+.process
+	color #d5d5d5	
+.page
+	margin 40px 0 20px
+	text-align center
+	
+.channelImgs
+	margin-right 5px
+	max-width 52px			
+	max-height 52px	
+
+
+@media screen and (max-width: 1680px)
+	.rightContent
+		width 85%
