@@ -1,0 +1,37 @@
+
+  {
+    "date": "01 Aug 2019",
+    "channel": [
+      {
+        "platformName": "pic1.jpg"
+      },
+      {
+        "shopName": "pic2.jpg"
+      }
+    ],
+    "orderNumber": "2030564429465",
+    "productDetails": [
+      {
+        "id": 0,
+        "productPicUrl": "pic3.jpg",
+        "sku": "MF-02-BR",
+        "qty": "1",
+        "paid": "$79"
+      },
+      {
+        "id": 1,
+        "productPicUrl": "pic4.jpg",
+        "sku": "MF-02-BR",
+        "qty": "1",
+        "paid": "$79"
+      }
+    ],
+    "shipment": [
+      {
+        "companyName": "Simplypost"
+      },
+      {
+        "waybillNumber": "SYSGD00614583"
+      }
+    ]
+  }

@@ -1,0 +1,211 @@
+{
+  "topMenuJson": {
+    "pending": "100",
+    "readyship": "66",
+    "shipped": "87",
+    "delivered": "100",
+    "canceled": "1000",
+    "all": "1000",
+    "fourBox1": "10",
+    "fourBox2": "33",
+    "fourBox3": "91",
+    "fourBox4": "100"
+  },
+  "orderInfo": [
+    {
+      "id": 0,
+      "status": "pending",
+      "createdData": "01 Aug 2019 06:11:12 PM",
+      "upData": "02 Aug 2019 06:11:12 PM",
+      "importData": "11 Aug 2019 06:11:12 PM",
+      "amout": "179",
+      "shippingFee": 0,
+      "discount": 0,
+      "gst": 10,
+      "channel": [
+        {
+          "number": 0,
+          "platformName": "淘宝",
+          "picName": "pic1.jpg"
+        },
+        {
+          "number": 1,
+          "shopName": "大王店铺",
+          "picName": "pic2.jpg"
+        }
+      ],
+      "orderNumber": "2030564429465",
+      "productDetails": [
+        {
+          "productType": 0,
+          "productPicUrl": "pic3.jpg",
+          "productName": "SADJP026 4ASD654654654/56asd",
+          "sku": "AA-02-BR",
+          "qty": "1",
+          "paid": 79,
+          "subtotal": 79
+        },
+        {
+          "productType": 1,
+          "productName": "zz45645 wijisadp1111/9999z",
+          "productPicUrl": "pic4.jpg",
+          "sku": "MF-02-BR",
+          "qty": "1",
+          "paid": 100,
+          "subtotal": 120
+        }
+      ],
+      "shipmentType": "Standard",
+      "companyName": "Simplypost",
+      "waybillNumber": "SYSGD00614583"
+    },
+    {
+      "id": 1,
+      "status": "pending",
+      "createdData": "02 Aug 2019 06:11:12 PM",
+      "upData": "09 Aug 2019 06:11:12 PM",
+      "importData": "10 Aug 2019 06:11:12 PM",
+      "amout": "100",
+      "shippingFee": 0,
+      "discount": 0,
+      "gst": 0,
+      "channel": [
+        {
+          "number": 0,
+          "platformName": "京东",
+          "picName": "pic1.jpg"
+        },
+        {
+          "number": 1,
+          "shopName": "多细店铺",
+          "picName": "pic2.jpg"
+        }
+      ],
+      "orderNumber": "111111",
+      "productDetails": [
+        {
+          "productType": 0,
+          "productPicUrl": "pic4.jpg",
+          "productName": "SADJP026 4ASD654654654/56asd",
+          "sku": "MF-02-BR",
+          "qty": "1",
+          "paid": 100,
+          "subtotal": 120
+        }
+      ],
+      "shipmentType": "No",
+      "companyName": "Zimplypost",
+      "waybillNumber": "DDDDD1111168"
+    },
+    {
+      "id": 2,
+      "status": "pending",
+      "createdData": "03 Aug 2019 06:11:12 PM",
+      "upData": "04 Aug 2019 06:11:12 PM",
+      "importData": "07 Aug 2019 06:11:12 PM",
+      "amout": "100",
+      "shippingFee": 0,
+      "discount": 0,
+      "gst": 0,
+      "channel": [
+        {
+          "number": 0,
+          "platformName": "京东",
+          "picName": "pic1.jpg"
+        },
+        {
+          "number": 1,
+          "shopName": "东坡店铺",
+          "picName": "pic2.jpg"
+        }
+      ],
+      "orderNumber": "666666666",
+      "productDetails": [
+        {
+          "productType": 0,
+          "productPicUrl": "pic4.jpg",
+          "sku": "WE-02-BR",
+          "productName": "SADJP026 4ASD654654654/56asd",
+          "qty": "1",
+          "paid": 100,
+          "subtotal": 120
+        }
+      ],
+      "shipmentType": "XXXXXXXXXX",
+      "companyName": "Simplypost",
+      "waybillNumber": "QWAWD12345678"
+    }
+  ],
+  "billingAddress": [
+    {
+      "id": 0,
+      "name": "张三",
+      "address": "上海市静安区爱阿拉斯加的了",
+      "country": "中国",
+      "zipCode": "450455",
+      "phone": "9784549"
+    },
+    {
+      "id": 1,
+      "name": "李四",
+      "address": "北京市吉萨豆皮骄傲搜集大量",
+      "country": "中国",
+      "zipCode": "11111",
+      "phone": "22222222222"
+    },
+    {
+      "id": 2,
+      "name": "王二",
+      "address": "广州市圣诞节安排大家啦时间到了",
+      "country": "中国",
+      "zipCode": "333333",
+      "phone": "55555555"
+    }
+  ],
+  "shippingAddress": [
+    {
+      "id": 0,
+      "name": "卖家阿三",
+      "address": "上海市普遍区阿斯顿请问",
+      "country": "中国",
+      "zipCode": "598956456",
+      "phone": "13971564564"
+    },
+    {
+      "id": 1,
+      "name": "卖家啊视频都",
+      "address": "阿三我去额自行车",
+      "country": "中国",
+      "zipCode": "898989",
+      "phone": "76464987"
+    },
+    {
+      "id": 2,
+      "name": "卖家破爱",
+      "address": "i涉及到你阿斯都",
+      "country": "中国",
+      "zipCode": "4747*89",
+      "phone": "964654867"
+    }
+  ],
+  "orderProcessHistory": [
+    {
+      "id": 0,
+      "printedBy": "Jason",
+      "printDate": "03 Aug 2019 06:10:44 PM",
+      "importDate": "02 Aug 2019 06:10:44 PM"
+    },
+    {
+      "id": 1,
+      "printedBy": "ZZZZZ",
+      "printDate": "04 Aug 2019 06:10:44 PM",
+      "importDate": "04 Aug 2019 06:10:44 PM"
+    },
+    {
+      "id": 2,
+      "printedBy": "WWWWW",
+      "printDate": "05 Aug 2019 06:10:44 PM",
+      "importDate": "05 Aug 2019 06:10:44 PM"
+    }
+  ]
+}
